@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/ryanlivingston/Documents/Farmingdale/EET450T/SmartThermos_iOS/SmartThermos_iOS/ViewController.swift">
+   </FileRef>
+   <FileRef
       location = "self:SmartThermos_iOS.xcodeproj">
    </FileRef>
 </Workspace>

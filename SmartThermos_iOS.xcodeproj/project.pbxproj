@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		C765C5F6224321E000CE61D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C765C5F5224321E000CE61D7 /* AppDelegate.swift */; };
-		C765C5F8224321E000CE61D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C765C5F7224321E000CE61D7 /* ViewController.swift */; };
-		C765C5FB224321E000CE61D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C765C5F9224321E000CE61D7 /* Main.storyboard */; };
 		C765C5FD224321E300CE61D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C765C5FC224321E300CE61D7 /* Assets.xcassets */; };
 		C765C600224321E300CE61D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C765C5FE224321E300CE61D7 /* LaunchScreen.storyboard */; };
+		C765C60A2243227000CE61D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C765C6082243227000CE61D7 /* Main.storyboard */; };
+		C765C60E2243232D00CE61D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C765C60D2243232D00CE61D7 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C765C5F2224321E000CE61D7 /* SmartThermos_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartThermos_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C765C5F5224321E000CE61D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C765C5F7224321E000CE61D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C765C5FA224321E000CE61D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C765C5FC224321E300CE61D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C765C5FF224321E300CE61D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C765C601224321E300CE61D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C765C6082243227000CE61D7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C765C60D2243232D00CE61D7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				C765C5F5224321E000CE61D7 /* AppDelegate.swift */,
-				C765C5F7224321E000CE61D7 /* ViewController.swift */,
-				C765C5F9224321E000CE61D7 /* Main.storyboard */,
+				C765C60D2243232D00CE61D7 /* ViewController.swift */,
+				C765C6082243227000CE61D7 /* Main.storyboard */,
 				C765C5FC224321E300CE61D7 /* Assets.xcassets */,
 				C765C5FE224321E300CE61D7 /* LaunchScreen.storyboard */,
 				C765C601224321E300CE61D7 /* Info.plist */,
@@ -124,7 +124,7 @@
 			files = (
 				C765C600224321E300CE61D7 /* LaunchScreen.storyboard in Resources */,
 				C765C5FD224321E300CE61D7 /* Assets.xcassets in Resources */,
-				C765C5FB224321E000CE61D7 /* Main.storyboard in Resources */,
+				C765C60A2243227000CE61D7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C765C5F8224321E000CE61D7 /* ViewController.swift in Sources */,
+				C765C60E2243232D00CE61D7 /* ViewController.swift in Sources */,
 				C765C5F6224321E000CE61D7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +143,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C765C5F9224321E000CE61D7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C765C5FA224321E000CE61D7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C765C5FE224321E300CE61D7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.livingston.SmartThermos-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +302,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.livingston.SmartThermos-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
