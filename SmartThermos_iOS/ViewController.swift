@@ -177,12 +177,13 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
             var ActualTemp = unwrapCharacteristicData(for: characteristic).description
             ActualTemp += "\u{00B0}F"
             ActualTempTextField.text = ActualTemp
-            print("Actual Temp: \(ActualTemp)")
+            print("Notified: <Actual_Temp: \(ActualTemp)>")
         }
         if characteristic.uuid.isEqual(BLE_Characterstic_Battery_CBUUID) {
             var BatteryLevel = unwrapCharacteristicData(for: characteristic).description
             BatteryLevel += "%"
             BatteryTextField.text = BatteryLevel
+            print("Notified: <Battery: \(BatteryLevel)>");
         }
         if characteristic.uuid.isEqual(BLE_Characterstic_OpStatus_CBUUID) {
             let statusInt = Int(unwrapCharacteristicData(for: characteristic))

@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CBTester" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SmartThermos_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,7 +24,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="130" minimumValue="100" maximumValue="140" translatesAutoresizingMaskIntoConstraints="NO" id="7WD-RI-KXm">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="130" minimumValue="100" maximumValue="140" stepValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="7WD-RI-KXm">
                                 <rect key="frame" x="140.66666666666666" y="638" width="94" height="29"/>
                                 <connections>
                                     <action selector="SetTempStepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="8Gp-fc-W8w"/>
