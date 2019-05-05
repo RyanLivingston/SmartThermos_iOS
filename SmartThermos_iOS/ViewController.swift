@@ -188,6 +188,8 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
         if characteristic.uuid.isEqual(BLE_Characterstic_OpStatus_CBUUID) {
             let statusInt = Int(unwrapCharacteristicData(for: characteristic))
             
+            print("Notified: <Op_Status: \(statusInt)>");
+            
             if statusInt == 0 {
                 StatusLabel.text = "Ready!"
                 StatusLabel.textColor = UIColor.green
